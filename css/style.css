@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html,body{
+	height: 100%;
+ }
+
+/* Divs gerais! */
+
+ div.clear{
+	clear: both;
+ }
+
+ div.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+ }
+ /* ********** */
+
+ header{
+	background-color: #d6d6d6;
+	padding: 10px 2%;
+ }
+
+div.logo-1{
+	float: left;
+	width: 150px;
+	height: 60px;
+	/* background-color: purple; */
+	background-image: url('../imagens/logo1.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+ }
+
+div.logo-2{
+	float: right;
+	width: 150px;
+	height: 60px;
+	/* background-color: green; */
+	background-image: url('../imagens/logo2.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+ }
+
+ @media screen and (max-width: 510px){
+
+	header{
+		text-align: center;
+	}
+
+	div.logo-1, div.logo-2{
+		margin-top: 10px;
+		display: inline-block;
+		float: none;
+	}
+ }
