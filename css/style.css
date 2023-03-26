@@ -50,27 +50,26 @@ div.logo-2{
 
  section.cover-form{
 	width: 100%;
-	padding: 0 2%;
-
  }
 
  div.bg{
 	background-image: url(../imagens/bg-form.jpg);
-	height: 500px;
+	height: 560px;
 	background-size: cover;
 	background-position: center;
+	position: relative;
  }
 
  div.form-container{
-	float: right;
 	width: 400px;
-	margin-right: 40px;
-	height: 110%;
-	position: relative;
+	height: 105%;
 	z-index: 2;
-	top: -5%;
 	box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
 	background-color: white;
+	position: absolute;
+	right: 30px;
+	top: -2.5%;
+
  }
 
  div.form-container h2{
@@ -82,7 +81,7 @@ div.logo-2{
 }
 
 div.form-container form{
-	margin-top: 8px;
+	margin-top: 20px;
 	padding: 15px;
 }
 
@@ -119,18 +118,14 @@ div.form-container form input[type=submit]{
 
 section.chamada{
 	width: 100%;
-	position: relative;
 	z-index: 1;
-	top: -50px;
-	display: inline-block;
 	text-align: center;
 
 }
 
-section.chamada .container{
-	padding: 50px 0;
-	background-color: #7c6757;
-
+section.chamada div.container{
+	background-color: #29526d;
+	padding: 70px 0 50px 0;
 }
 
 section.chamada h2{
@@ -139,11 +134,39 @@ section.chamada h2{
 	display: inline-block;
 	color: white;
 	font-size: 24px;
+	text-transform: uppercase;
 	font-weight: normal;
+}
 
+section.chamada p{
+	width: 96%;
+	max-width: 700px;
+	display: inline-block;
+	color: white;
+	margin-top:10px;
+	font-size: 18px;
+	font-weight: normal;
 }
 
 /*Media Queries*/
+
+@media screen and (max-width: 960px){
+
+	div.bg{
+		text-align: center;
+		height: auto;
+		padding: 40px 0;
+	}
+
+	div.form-container{
+		height: auto;
+		width: 98%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+	}
+}
+
  @media screen and (max-width: 510px){
 
 	header{
